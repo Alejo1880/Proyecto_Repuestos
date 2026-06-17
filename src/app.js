@@ -1,5 +1,7 @@
 import express from 'express'
+import swaggerUi from 'swagger-ui-express'
 import db from './config/database.js'
+import swaggerSpec from './config/swagger.js'
 import authRoutes from './routes/authRoutes.js'
 import repuestoRoutes from './routes/repuestoRoutes.js'
 import pedidoRoutes from './routes/pedidoRoutes.js'

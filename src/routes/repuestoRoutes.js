@@ -54,7 +54,7 @@ router.get('/:id', authenticate, getById)
  *             required:
  *               - codigo
  *               - descripcion
- *               - marcaCompatible
+ *               - marca
  *               - precio
  *             properties:
  *               codigo:
@@ -63,7 +63,7 @@ router.get('/:id', authenticate, getById)
  *               descripcion:
  *                 type: string
  *                 example: Bujía NGK
- *               marcaCompatible:
+ *               marca:
  *                 type: string
  *                 example: Toyota
  *               precio:

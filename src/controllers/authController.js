@@ -1,5 +1,5 @@
 import * as userRepository from '../repositories/userRepository.js'
-import { generateToken, hashPassword, comparePassword } from '../utils/auth.js'
+import { generarToken, hashPassword, comparePassword } from '../utils/auth.js'
 
 const register = async (req, res) => {
   try {
@@ -19,7 +19,7 @@ const register = async (req, res) => {
       rol
     })
 
-    const token = generateToken({ id: user._id, rol: user.rol })
+    const token = generarToken({ id: user._id, rol: user.rol })
 
     res.status(201).json({ token })
   } catch (error) {
@@ -41,7 +41,7 @@ const login = async (req, res) => {
       return res.status(401).json({ message: 'Credenciales inválidas' })
     }
 
-    const token = generateToken({ id: user._id, rol: user.rol })
+    const token = generarToken({ id: user._id, rol: user.rol })
 
     res.status(200).json({ token })
   } catch (error) {
