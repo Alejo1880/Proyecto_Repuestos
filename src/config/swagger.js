@@ -10,7 +10,7 @@ const options = {
     },
     servers: [
   {
-    url: 'https://repuestos-api.onrender.com/api',
+    url: 'https://proyecto-repuestos.onrender.com/api',
     description: 'Servidor de producción'
   },
   {
