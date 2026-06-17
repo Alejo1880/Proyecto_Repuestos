@@ -16,7 +16,7 @@ const router = Router()
  *       401:
  *         description: Token no proporcionado o inválido
  */
-router.get('/', authenticate, getAll)
+router.get('/',  getAll)
 
 /**
  * @swagger
@@ -36,7 +36,7 @@ router.get('/', authenticate, getAll)
  *       404:
  *         description: Repuesto no encontrado
  */
-router.get('/:id', authenticate, getById)
+router.get('/:id',  getById)
 
 
 /**
