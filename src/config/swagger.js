@@ -9,11 +9,15 @@ const options = {
       description: 'API REST para gestión de pedidos en una casa de repuestos de autos'
     },
     servers: [
-      {
-        url: 'http://localhost:3000/api',
-        description: 'Servidor de desarrollo'
-      }
-    ],
+  {
+    url: 'https://repuestos-api.onrender.com/api',
+    description: 'Servidor de producción'
+  },
+  {
+    url: 'http://localhost:3000/api',
+    description: 'Servidor de desarrollo'
+  }
+],
     components: {
       securitySchemes: {
         bearerAuth: {
