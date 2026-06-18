@@ -114,14 +114,14 @@ Cada ítem dentro de un pedido guarda `repuesto`, `cantidad` y `precioUnitario`.
 ### Auth
 
 | Método | Ruta | Descripción |
-|---|---|---|---|
+|---|---|---|
 | POST | `/api/auth/register` | Registrar un nuevo usuario |
 | POST | `/api/auth/login` | Iniciar sesión y obtener token |
 
 ### Repuestos
 
 | Método | Ruta | Descripción |
-|---|---|---|---|
+|---|---|---|
 | GET | `/api/repuestos` | Listar todos los repuestos |
 | GET | `/api/repuestos/:id` | Obtener un repuesto por ID |
 | POST | `/api/repuestos` | Crear un nuevo repuesto |
@@ -129,7 +129,7 @@ Cada ítem dentro de un pedido guarda `repuesto`, `cantidad` y `precioUnitario`.
 ### Pedidos
 
 | Método | Ruta | Descripción |
-|---|---|---|---|
+|---|---|---|
 | GET | `/api/pedidos` | Listar todos los pedidos |
 | GET | `/api/pedidos/:id` | Obtener un pedido por ID |
 | POST | `/api/pedidos` | Crear un nuevo pedido |
